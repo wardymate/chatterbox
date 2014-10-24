@@ -12,7 +12,7 @@ Instructions
 Tasks:
 ------
 
-First place the chatbot below in a file such as 'chatbot.rb', rub it from the command line and then experiment chatting with it:
+First place the chatbot below in a file such as 'chatbot.rb', run it from the command line and then experiment chatting with it:
 
 ```ruby
 def get_response(input)
