@@ -51,7 +51,7 @@ bye
 
 
 1. add at least five more responses so that the bot has a bigger range of conversation
-2. add at least another two more responses that use regex capture groups - that's the `%{c1}` being replaced with whatever matched the brackets `(.*)` in the regular expression.  In Ruby regesx capture groups are stored in `$1`, `$2` etc after a regex match takes place
+2. add at least another two more responses that use regex capture groups - that's the `%{c1}` being replaced with whatever matched the brackets `(.*)` in the regular expression.  In Ruby regex capture groups are stored in `$1`, `$2` etc after a regex match takes place
 3. extend the bot so that there is a key word, e.g. "quit" that will end the session
 4. add a prompt in front of each sentence to indicate if either the person or the bot is talking
 5. make the bot and the person's chat different colours
