@@ -33,6 +33,21 @@ while(input = gets.chomp) do
 end
 ```
 
+It should go something like this:
+
+```
+→ ruby chatbot.rb 
+Hello, what's your name?
+Dan
+Hello Dan
+the weather is clement
+I hate it when it's clement
+I love noodles
+I love noodles too
+goodbye
+bye
+```
+
 
 1. add at least five more reponses so that the bot has a bigger range of conversation
 2. add at least another two more responses that use regex capture groups so the bot is using part of what the user types in in the response
