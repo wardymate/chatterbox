@@ -25,7 +25,8 @@ end
 RESPONSES = { 'goodbye' => 'bye', 
               'sayonara' => 'sayonara', 
               'the weather is (.*)' => 'I hate it when it\'s %{c1}', 
-              'I love (.*)' => 'I love %{c1} too'}
+              'I love (.*)' => 'I love %{c1} too', 
+              'I groove to (.*) and (.*)' => 'I love %{c1} but I hate %{c2}'}
 
 puts "Hello, what's your name?"
 name = gets.chomp
@@ -45,6 +46,8 @@ the weather is clement
 I hate it when it's clement
 I love noodles
 I love noodles too
+I groove to funk and soul
+I love funk but I hate soul
 goodbye
 bye
 ```
