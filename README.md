@@ -18,6 +18,7 @@ First place the chatbot below in a file such as 'chatbot.rb', run it from the co
 ```ruby
 def get_response(input)
   key = RESPONSES.keys.select {|k| /#{k}/ =~ input }.sample
+  /#{key}/ =~ input
   response = RESPONSES[key]
   response.nil? ? 'sorry?' : response % { c1: $1, c2: $2}
 end
@@ -30,6 +31,7 @@ RESPONSES = { 'goodbye' => 'bye',
 
 puts "Hello, what's your name?"
 name = gets.chomp
+puts "Hello #{name}"
 while(input = gets.chomp) do
   puts get_response(input)
 end
