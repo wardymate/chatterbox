@@ -2,7 +2,7 @@ def get_response(input)
   key = RESPONSES.keys.select {|k| /#{k}/ =~ input }.sample
   /#{key}/ =~ input
   response = RESPONSES[key]
-  response.nil? ? 'sorry?' : response % { c1: $1, c2: $2}
+  response.nil? ? 'sorry?' : response % { c1: $1, c2: $2, c3: $3, c4: $4}
 end
 
 class String
@@ -36,6 +36,7 @@ RESPONSES = { 'goodbye' => 'bye',
               'I love (.*)' => 'I love %{c1} too', 
               'I like (.*) and (.*)' => 'I also like %{c1} but am not a fan of %{c2}',
               'Have you seen (.*)?' => 'Yes %{c1} is brilliant',
+              'my favourite foods are (.*) and (.*) i also like (.*) and (.*)' => 'I like %{c1}, %{c2}, %{c3} and %{c4} too!',
               'I groove to (.*) and (.*)' => 'I love %{c1} but I hate %{c2}'}
 
 bot_prompt
