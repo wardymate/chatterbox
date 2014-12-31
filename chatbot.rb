@@ -15,6 +15,8 @@ RESPONSES = { 'goodbye' => 'bye',
               'What is your name?' => 'Chatterbox - What would you like to talk about?',
               'the weather is (.*)' => 'I hate it when it\'s %{c1}', 
               'I love (.*)' => 'I love %{c1} too', 
+              'I like (.*) and (.*)' => 'I also like %{c1} but am not a fan of %{c2}',
+              'Have you seen (.*)?' => 'Yes %{c1} is brilliant',
               'I groove to (.*) and (.*)' => 'I love %{c1} but I hate %{c2}'}
 
 puts "Hello, what's your name?"
