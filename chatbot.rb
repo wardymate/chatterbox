@@ -7,6 +7,12 @@ end
 
 RESPONSES = { 'goodbye' => 'bye', 
               'sayonara' => 'sayonara', 
+              'How are you?' => 'Very well thank you, and you?',
+              'Very good thanks' => 'That is good',
+              'I am happy' => 'That is excellent',
+              'I am sad' => 'Sorry to hear that can I cheer you up?',
+              'Yes please!' => 'Let us try that',
+              'What is your name?' => 'Chatterbox - What would you like to talk about?',
               'the weather is (.*)' => 'I hate it when it\'s %{c1}', 
               'I love (.*)' => 'I love %{c1} too', 
               'I groove to (.*) and (.*)' => 'I love %{c1} but I hate %{c2}'}
