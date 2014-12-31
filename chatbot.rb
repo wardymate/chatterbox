@@ -5,6 +5,14 @@ def get_response(input)
   response.nil? ? 'sorry?' : response % { c1: $1, c2: $2}
 end
 
+def user_prompt
+print "User <: "
+end
+
+def bot_prompt
+ print "Bot ]: "
+end
+
 RESPONSES = { 'goodbye' => 'bye', 
               'sayonara' => 'sayonara', 
               'How are you?' => 'Very well thank you, and you?',
@@ -19,13 +27,19 @@ RESPONSES = { 'goodbye' => 'bye',
               'Have you seen (.*)?' => 'Yes %{c1} is brilliant',
               'I groove to (.*) and (.*)' => 'I love %{c1} but I hate %{c2}'}
 
+bot_prompt
 puts "Hello, what's your name?"
+user_prompt
 name = gets.chomp
+bot_prompt
 puts "Hello #{name}"
+user_prompt
 while(input = gets.chomp) do
 	if input == "quit"
 		puts "Thank you for chatting please come again!"
 		break
 	end
+  bot_prompt
   puts get_response(input)
+  user_prompt
 end
